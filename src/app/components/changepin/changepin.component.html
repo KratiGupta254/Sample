@@ -1,0 +1,42 @@
+<button mat-icon-button style="float: right; margin: 5px; " matDialogClose>
+    <mat-icon>close</mat-icon>
+</button>
+<mat-dialog-content>
+    <header>
+        <h1>
+            Change Pin
+        </h1>
+    </header>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Account Number</mat-label>
+            <input [(ngModel)]="changepin.accNo" matInput placeholder="Enter Account Number">
+            <mat-icon matSuffix>person_pin</mat-icon>
+          </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Pin</mat-label>
+            <input [(ngModel)]="changepin.pin" matInput placeholder="Enter Pin">
+            <mat-icon matSuffix>123</mat-icon>
+          </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>New Pin</mat-label>
+            <input [(ngModel)]="changepin.newPin" matInput placeholder="Enter New Pin">
+            <mat-icon matSuffix>123</mat-icon>
+          </mat-form-field>
+    </p>
+
+    <mat-dialog-actions class="deposit-button">
+        <button type="submit" (click)="onChangePin()" mat-raised-button style="background-color: #191970; color: white;">Change Pin</button> 
+    </mat-dialog-actions>
+
+
+</mat-dialog-content>
+
+
+

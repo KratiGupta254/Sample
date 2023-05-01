@@ -1,0 +1,16 @@
+ .bootstrap-wrapper{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../../../assets/images/background1.avif);
+}
+
+.full-width{
+    width: 100%;
+
+}
+
+.login-button{
+    text-align: center;
+}

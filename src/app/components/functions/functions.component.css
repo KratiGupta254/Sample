@@ -1,0 +1,21 @@
+.grid-box{
+    margin-left: 3%;
+    margin-top: 10%;
+    margin-right: 3%;
+    
+    
+}
+
+mat-grid-tile{
+    background-color: #191970	;
+    text-shadow: 0 0 3px  skyblue;
+    font-size: 50px;
+    color: white;
+
+}
+.main{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}

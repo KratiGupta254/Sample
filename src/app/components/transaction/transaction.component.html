@@ -1,0 +1,26 @@
+<div class="table-style">
+<table class="table">
+    <thead>
+      <tr>
+        <!-- <th>Account Number</th> -->
+        <th>Transaction Type</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let history of historyModel">
+      <tr>
+        <!-- <td>{{history.accNo}}</td> -->
+        <td >{{history.functionalityStatus? 'Withdraw' : 'Deposit'}}</td>
+        <td>{{history.amount}}</td>
+        <td>{{history.date}}</td>
+      </tr>
+      <!-- <tr *ngFor="let transaction of transactions">
+        <td>{{ transaction.date }}</td>
+        <td>{{ transaction.description }}</td>
+        <td>{{ transaction.amount }}</td>
+      </tr> -->
+    </tbody>
+  </table>
+  </div>
+

@@ -1,0 +1,36 @@
+ <div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="column md-6 offset-md-3">
+                <mat-card class="card">
+
+                <h1 class="heading">Login Form</h1>
+                <form (ngSubmit)="submit()" [formGroup]="login">
+                <p>
+
+                    <mat-form-field class="full-width "appearance="fill">
+                        <mat-label>Account Number</mat-label>
+                        <input [(ngModel)]="loginUser.accNo" name="accNo" matInput placeholder="Please enter..." formControlName="accNo">
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width "appearance="fill">
+                        <mat-label>Pin Number</mat-label>
+                        <input [(ngModel)]="loginUser.pin" name="pin" type="password" matInput placeholder="Please enter..." formControlName="pin">
+                      </mat-form-field>
+
+                  </p>
+
+
+                  <div class="login-button">
+                    <button type="submit" (click)="onFunctions()" mat-raised-button style="background-color: #191970; color: white;">Login</button>
+                  </div>
+
+
+                </form>
+                  </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+

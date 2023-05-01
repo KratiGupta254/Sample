@@ -1,0 +1,73 @@
+<div class="bootstrap-wrapper"> <!--tp apply grids-->
+    <div class="container">  <!--jisse ye center ki trf aaye-->
+
+        <div class="row" style="margin-top: 50px;">
+                 <div class="col-md-6  offset-md-3">
+                  <mat-card class="card">
+                  <h1 class="heading">Sign Up Form</h1>
+                    <form >
+
+                        <p>
+
+                            <mat-form-field class="label-width "appearance="fill">
+                                <mat-label>Account Number</mat-label>
+                                <input [(ngModel)]="user.accNo" name="accNo" matInput placeholder="Please enter..." >
+                             <!-- <mat-hint style="color: red;" *ngIf="user.get('accNo')?.touched && user.get('accNo')?.errors.['required']">-->
+                                <!-- <mat-error style="color: red;" *ngIf="user.errors?.['required']&& (user.touched||user.dirty)">
+                                Account number is required
+                              </mat-error> -->
+                              <!--<mat-error style="color: red;" *ngIf="user.errors?.['minLength']&& (user.touched||user.dirty)">
+                                Account number must be 10 digit long
+                              </mat-error>-->
+                              
+                              </mat-form-field>
+
+                              <mat-form-field class="label-width "appearance="fill">
+                                <mat-label>Name</mat-label>
+                                <input [(ngModel)]="user.name"name="name" matInput placeholder="Please enter...">
+                                <!--<mat-error *ngIf="formGroup.user.name.status=='INVALID'">
+                                  Name is required.
+                                </mat-error>-->
+                              
+                              </mat-form-field>
+
+                              <mat-form-field class="label-width "appearance="fill">
+                                <mat-label>Father Name</mat-label>
+                                <input [(ngModel)]="user.fatherName" name="fatherName" type="text" matInput placeholder="Please enter...">
+                              </mat-form-field>
+
+                              <mat-form-field class="label-width "appearance="fill">
+                                <mat-label>Email id</mat-label>
+                                <input [(ngModel)]="user.email" name="email" type="email" matInput placeholder="Please enter..." >
+                              </mat-form-field>
+
+                              <mat-form-field class="label-width "appearance="fill">
+                                <mat-label>Address</mat-label>
+                                <input [(ngModel)]="user.address" name="address" type="text" matInput placeholder="Please enter..." >
+                              </mat-form-field>
+
+                              <mat-form-field class="label-width "appearance="fill">
+                                <mat-label>Pin Number</mat-label>
+                                <input [(ngModel)]="user.pin" name="pin" type="password" matInput placeholder="Please enter..." >
+                              </mat-form-field>
+
+                              <mat-form-field class="label-width "appearance="fill">
+                                <mat-label>Date of Birth</mat-label>
+                                <input [(ngModel)]="user.dob" name="dob" matInput placeholder="Please enter..." >
+                              </mat-form-field>
+
+                          </p>
+                          <div class="signup-button">
+                            <button type="submit" (click)="onHome()" mat-raised-button style="background-color: #191970; color: white;">Signup</button>
+                          </div>
+                            
+                          
+                    </form>
+
+                  </mat-card>
+
+                 </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<button mat-icon-button style="float: right; margin: 5px; " matDialogClose>
+    <mat-icon>close</mat-icon>
+</button>
+<mat-dialog-content>
+    <header>
+        <h1>
+            Enter Details
+        </h1>
+    </header>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label >Account Number</mat-label>
+            <input matInput [(ngModel)]="this.accNo" name="accNo" placeholder="Please enter account number">
+            <mat-icon matSuffix>person_pin</mat-icon>
+          </mat-form-field>
+    </p>
+
+    <mat-dialog-actions class="deposit-button">
+        <button type="submit" (click)="openTransaction()" mat-raised-button style="background-color: #191970; color: white;">Submit</button> 
+    </mat-dialog-actions>
+
+
+</mat-dialog-content>
+
+
+

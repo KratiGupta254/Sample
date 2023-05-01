@@ -1,0 +1,33 @@
+<button mat-icon-button style="float: right; margin: 5px; " matDialogClose>
+    <mat-icon>close</mat-icon>
+</button>
+<mat-dialog-content>
+    <header>
+        <h1>
+            Withdraw Amount
+        </h1>
+    </header>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Account Number</mat-label>
+            <input [(ngModel)]="withdraw.accNo" matInput placeholder="Please enter account number">
+            <mat-icon matSuffix>person_pin</mat-icon>
+          </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Withdrawl Amount</mat-label>
+            <input [(ngModel)]="withdraw.withdrawAmt"  matInput placeholder="Please enter amount">
+            <mat-icon matSuffix>attach_money</mat-icon>
+          </mat-form-field>
+    </p>
+
+    <mat-dialog-actions class="deposit-button">
+        <button type="submit" (click)="onWithdraw()" mat-raised-button style="background-color: #191970; color: white;">Submit</button> 
+    </mat-dialog-actions>
+
+
+</mat-dialog-content>
+
+
